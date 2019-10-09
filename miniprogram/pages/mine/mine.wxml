@@ -1,0 +1,28 @@
+<!--pages/mine/mine.wxml-->
+<!-- header -->
+<block wx:if="{{false}}">
+    <view class="header login">
+        <image src=""></image>
+        <view class="header-info">
+            <view>
+                <text class="header-name">李四</text>
+                <text class="header-position">客服</text> 
+            </view>
+            <text class="header-mobile">15040098396</text>
+        </view>
+    </view>
+</block>
+<block wx:if="{{true}}">
+    <view class="header nologin">
+        <text class="header-nologin">授权登录</text>
+    </view>
+</block>
+<!-- tabs -->
+<view class="tabs">
+    <image src="/image/mine/mine-report.png"></image>
+    <text>提报管理</text>
+</view>
+<view class="tabs">
+    <image src="/image/mine/mine-outlogin.png"></image>
+    <text>退出登录</text>
+</view>

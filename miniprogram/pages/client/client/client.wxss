@@ -1,0 +1,131 @@
+/* pages/client/client/client.wxss */
+/* search */
+.search{
+    position: fixed;
+    top: 0;
+    left: 20rpx;
+    width: 710rpx;
+    height: 74rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding-top: 27rpx;
+}
+.search .search-input{
+    width: 620rpx;
+    height: 74rpx;
+    background-color: #fff;
+    border-radius: 5rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.search .search-input image{
+    width: 28rpx;
+    height: 28rpx;
+    margin-left: 21rpx;
+}
+.search .search-input input{
+    margin-left: 11rpx;
+    width: 400rpx;
+    height: 74rpx;
+    font-size: 24rpx;
+    color: #333;
+}
+.search .search-input ._input{
+    font-size: 24rpx;
+    color: #999;
+}
+.search .search-button{
+    font-size: 34rpx;
+    color: #999;
+}
+/* tabs */
+.tabs{
+    position: fixed;
+    top: 101rpx;
+    left: 0;
+    width: 750rpx;
+    height: 110rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.tabs .tabs-block{
+    width: 374rpx;
+    height: 28rpx;
+    display: flex;
+    justify-content: center;
+}
+.tabs .tabs-block:last-of-type{
+    border-left: 1rpx solid #DDDDDD;
+}
+.tabs .tabs-block image{
+    width: 24rpx;
+    height: 28rpx;
+}
+.tabs .tabs-block text{
+    margin-left: 16rpx;
+    font-size: 28rpx;
+    color: #101010;
+    line-height: 1;
+}
+/* list-block */
+.list-block{
+    height: 211rpx;
+}
+/* list */
+.list{
+    width: 710rpx;
+    height: 145rpx;
+    background-color: #fff;
+    margin-left: 20rpx;
+    border-radius: 15rpx;
+    margin-bottom: 16rpx;
+}
+.list view{
+    width: 710rpx;
+    height: 59rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.list view .list-type{
+    width: 68rpx;
+    height: 34rpx;
+    margin-left: 20rpx;
+    background-color: #F49D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18rpx;
+    color: #fff;
+    border-radius: 3rpx;
+}
+.list view .list-name{
+    flex-basis: 350rpx;
+    font-size: 28rpx;
+    color: #101010;
+    margin-left: 20rpx;
+    line-height: 1.2;
+}
+.list view .list-city{
+    font-size: 24rpx;
+    color: #999;
+    line-height: 1.2;
+    flex-basis: 234rpx;
+    display: flex;
+    justify-content: flex-end;
+}
+.list .list-text{
+    margin: 30rpx 0 0 21rpx;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 665rpx;
+    font-size: 24rpx;
+    color: #999;
+}

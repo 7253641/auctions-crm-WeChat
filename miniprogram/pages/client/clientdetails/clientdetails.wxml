@@ -1,0 +1,83 @@
+<!--pages/client/clientdetails/clientdetails.wxml-->
+<!-- header -->
+<view class="header">
+    <text>张老三</text>
+    <view bindtap="openLayer">
+        <image src="/image/client/clientadd.png"></image>
+        <text>新沟通</text>
+    </view>
+</view>
+<!-- info -->
+<view class="info">
+    <view class="info-column">
+        <view>
+            <text>联系电话</text>
+            <text class="or">15040098396</text>
+        </view>
+        <view>
+            <text>活动区域</text>
+            <text>河南-许昌</text>
+        </view>
+        <view>
+            <text>客户属性</text>
+            <text>租聘</text>
+        </view>
+    </view>
+    <view class="info-column">
+        <view>
+            <text>主营设备</text>
+            <text>搅拌车、泵车</text>
+        </view>
+        <view>
+            <text>客户来源</text>
+            <text>818签到</text>
+        </view>
+        <view>
+            <text>入库时间</text>
+            <text>2109-12-23</text>
+        </view>
+    </view>
+</view>
+<view class="info-block"></view>
+<!-- tabs -->
+<view class="tabs">
+    <view class="{{tabs == 0 ? 'choose' : ''}}" data-index="0" bindtap="tabs">
+        <image src="{{tabs == 0 ? '/image/client/client-tabs01-se.png' : '/image/client/client-tabs01.png'}}"></image>
+        <text>沟通记录</text>
+    </view>
+    <view class="{{tabs == 1 ? 'choose' : ''}}" data-index="1" bindtap="tabs">
+        <image src="{{tabs == 1 ? '/image/client/client-tabs02-se.png' : '/image/client/client-tabs02.png'}}"></image>
+        <text>参会记录</text>
+    </view>
+</view>
+<view class="tabs-block"></view>
+<!-- list -->
+<block wx:for="{{10}}" wx:key>
+    <view class="list">
+        <view class="list-">
+            <text>2019-09-21  08:09:38</text>
+            <text class="{{tabs == 1 ? 'overflow' : ''}}">交纳《818拍卖会》保证金80000元交纳《818拍卖会》保证金80000元交纳《818拍卖会》保证金80000元交纳《818拍卖会》保证金80000元交纳《818拍卖会》保证金80000元交纳《818拍卖会》保证金80000元</text>
+        </view>
+    </view>
+</block>
+<!-- layer -->
+<view class="layer-view" wx:if="{{layer}}" bindtap="closeLayer"></view>
+<view class="layer animation-slide-bottom" wx:if="{{layer}}">
+    <text class="layer-header">添加新沟通</text>
+    <image src="/image/x.png" bindtap="closeLayer"></image>
+    <textarea placeholder="输入顾客沟通后的情况" placeholder-class="_textarea"></textarea>
+    <text class="layer-btn">提交</text>
+</view>
+<!-- 暂无数据 -->
+<view class='nodata' wx:if="{{!json.length}}">
+	<image src='/image/common/nodata.png'></image>
+	<text>暂无数据</text>
+</view>
+<!-- 列表加载 -->
+<view class="loading" wx:if="{{loading}}">
+	<image class='loading_img' src='/image/common/loading.png'></image>
+	<text>加载中...</text>
+</view>
+<view class="loading" wx:if="{{loadingTest && json.length}}">
+	<text>没有更多数据了</text>
+</view>

@@ -1,5 +1,4 @@
-//index.js
-const app = getApp();
+// pages/mine/mine.js
 Page({
     data: {
 

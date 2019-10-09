@@ -1,6 +1,15 @@
 {
     "pages": [
-        "pages/index/index"
+        
+
+        "pages/client/client/client",
+        "pages/client/clientdetails/clientdetails",
+
+        "pages/mine/mine",
+
+        "pages/report/report/report",
+        "pages/report/reportclient/reportclient",
+        "pages/report/reportclientprem/reportclientprem"
     ],
     "usingComponents": {
         "i-spin": "../../dist/spin/index",
@@ -8,10 +17,28 @@
         "i-toast": "../../dist/toast/index"
     },
     "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "black"
+        "navigationBarBackgroundColor": "#F49D19",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#F49D19",
+        "backgroundColor": "#fff",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/client/client/client",
+                "iconPath": "image/index.png",
+                "selectedIconPath": "image/index-se.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "image/mine.png",
+                "selectedIconPath": "image/mine-se.png",
+                "text": "我的"
+            }
+        ]
     },
     "sitemapLocation": "sitemap.json"
 }

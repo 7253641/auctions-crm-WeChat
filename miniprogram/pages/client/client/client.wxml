@@ -1,0 +1,46 @@
+<!--pages/client/client/client.wxml-->
+<!-- search -->
+<view class="search">
+    <view class="search-input">
+        <image src="/image/common/search.png"></image>
+        <input type="text" placeholder="输入客户姓名或者手机号码" placeholder-class="input_"></input>
+    </view>
+    <text class="search-button">查询</text>
+</view>
+<!-- tabs -->
+<view class="tabs">
+    <view class="tabs-block">
+        <image src="/image/client-tabs-city.png"></image>
+        <text>地区</text>
+    </view>
+    <view class="tabs-block">
+        <image src="/image/client-tabs-client.png"></image>
+        <text>客户类型</text>
+    </view>
+</view>
+<!-- list-block -->
+<view class="list-block"></view>
+<!-- list -->
+<block wx:for="{{3}}" wx:key>
+    <navigator class="list" url="/pages/client/clientdetails/clientdetails">
+        <view>
+            <text class="list-type">泵车</text>
+            <text class="list-name">张3老三 150400978396</text>
+            <text class="list-city">内蒙古福-呼和浩特</text>
+        </view>
+        <text class="list-text">最近沟通：就他那些所谓的小成就，放在世俗不值所谓，可能就他那些所谓的小成就，放在世俗不值所谓，可能</text>
+    </navigator>
+</block>
+<!-- 暂无数据 -->
+<view class='nodata' wx:if="{{!json.length}}">
+	<image src='/image/common/nodata.png'></image>
+	<text>暂无数据</text>
+</view>
+<!-- 列表加载 -->
+<view class="loading" wx:if="{{loading}}">
+	<image class='loading_img' src='/image/common/loading.png'></image>
+	<text>加载中...</text>
+</view>
+<view class="loading" wx:if="{{loadingTest && json.length}}">
+	<text>没有更多数据了</text>
+</view>
