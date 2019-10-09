@@ -1,8 +1,12 @@
 {
     "pages": [
-        "pages/index/index",
-        "pages/logs/logs"
+        "pages/index/index"
     ],
+    "usingComponents": {
+        "i-spin": "../../dist/spin/index",
+        "i-load-more": "../../dist/load-more/index",
+        "i-toast": "../../dist/toast/index"
+    },
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
