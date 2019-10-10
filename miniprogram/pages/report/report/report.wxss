@@ -1,1 +1,47 @@
 /* pages/report/report/report.wxss */
+.list{
+    width: 710rpx;
+    height: 201rpx;
+    background-color: #fff;
+    margin-left: 20rpx;
+    border-radius: 15rpx;
+    margin-top: 15rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.list:first-of-type{
+    margin-top: 31rpx;
+}
+.list .list-left{
+    width: 560rpx;
+    height: 145rpx;
+    margin: 27rpx 0 0 21rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.list .list-left .list-left-top{
+    display: flex;
+    flex-direction: column;
+    line-height: 42rpx;
+    font-size: 28rpx;
+    color: #101010;
+}
+.list .list-left .list-left-bottom{
+    width: 560rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #101010;
+}
+.list .list-left .list-left-bottom .list-left-bottom_or{
+    font-size: 30rpx;
+    color: #EF6C00;
+}
+.list .list-right{
+    width: 110rpx;
+    height: 110rpx;
+    margin: 27rpx 19rpx 0 0;
+}

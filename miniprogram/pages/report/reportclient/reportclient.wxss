@@ -1,1 +1,63 @@
 /* pages/report/reportclient/reportclient.wxss */
+.search-block{
+    height: 101rpx;
+}
+.list{
+    width: 710rpx;
+    height: 168rpx;
+    background: #fff;
+    margin-left: 20rpx;
+    border-radius: 15rpx;
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list .list-top{
+    width: 671rpx;
+    margin-left: 19rpx;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27rpx;
+}
+.list .list-top text{
+    font-size: 28rpx;
+    color: #101010;
+}
+.list .list-top text:last-of-type{
+    font-size: 24rpx;
+    color: #999;
+}
+.list .list-bottom{
+    width: 671rpx;
+    margin-left: 19rpx;
+    display: flex;
+    justify-content: flex-star;
+    padding-bottom: 46rpx;
+}
+.list .list-bottom text{
+    font-size: 28rpx;
+    color: #101010;
+    margin-left: 46rpx;
+}
+.list .list-bottom text:first-of-type{
+    margin-left: 0;
+}
+.list .list-bottom .list-bottom_or{
+    font-size: 28rpx;
+    color: #F49D19;
+}
+/* btn */
+.report-client-btn{
+    position: fixed;
+    width: 750rpx;
+    height: 100rpx;
+    background: #F49D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    font-size: 36rpx;
+    color: #fff;
+}

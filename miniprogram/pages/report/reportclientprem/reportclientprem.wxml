@@ -1,2 +1,94 @@
 <!--pages/report/reportclientprem/reportclientprem.wxml-->
-<text>pages/report/reportclientprem/reportclientprem.wxml</text>
+<view class="form">
+    <view class="form-left">
+        <text>拍</text>
+        <text>卖</text>
+        <text>会</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="" placeholder-class="_input" value="xx拍卖会"></input>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>姓</text>
+        <text>名</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="请输入客户名称" placeholder-class="_input" value=""></input>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>电</text>
+        <text>话</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="请输入客户联系方式" placeholder-class="_input" value=""></input>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>省</text>
+        <text>市</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="选择省市" placeholder-class="_input" value=""></input>
+        <image src="/image/common/bottom.png"></image>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>来</text>
+        <text>源</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="请输入客户来源" placeholder-class="_input" value=""></input>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>属</text>
+        <text>性</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="请输入客户属性" placeholder-class="_input" value=""></input>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>分</text>
+        <text>类</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="选择客户分类" placeholder-class="_input" value=""></input>
+        <image src="/image/common/bottom.png"></image>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>主</text>
+        <text>营</text>
+        <text>设</text>
+        <text>备</text>
+    </view>
+    <view class="form-right">
+        <input type="text" placeholder="请输入客户所需设备类型" placeholder-class="_input" value=""></input>
+    </view>
+</view>
+<view class="form">
+    <view class="form-left">
+        <text>沟</text>
+        <text>通</text>
+        <text>描</text>
+        <text>述</text>
+    </view>
+    <view class="form-right textarea">
+        <textarea type="text" placeholder="请输入客户沟通后的情况" placeholder-class="_input" value=""></textarea>
+    </view>
+</view>
+<view class="ps">
+    <text>说明：</text>
+    <text>客户信息由业务员第一次提报后，终身为该业务员的客户，该业务员需定期维护客户。</text>
+</view>
+<text class="btn">提报</text>

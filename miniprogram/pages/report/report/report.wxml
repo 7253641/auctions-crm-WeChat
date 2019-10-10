@@ -1,2 +1,29 @@
 <!--pages/report/report/report.wxml-->
-<text>pages/report/report/report.wxml</text>
+<block wx:for="{{10}}" wx:key>
+    <navigator url="/pages/report/reportclient/reportclient" class="list">
+        <view class="list-left">
+            <view class="list-left-top">
+                <text>拍卖会名称：1018拍卖会</text>
+                <text>开拍时间：2019-10-18 10:18:18</text>
+            </view>
+            <view class="list-left-bottom">
+                <text>提报人数：<text class="list-left-bottom_or">10</text>人</text>
+                <text>到场人数：<text class="list-left-bottom_or">2</text>人</text>
+            </view>
+        </view>
+        <image class="list-right" src="/image/report/report-ing.png"></image>
+    </navigator>
+</block>
+<!-- 暂无数据 -->
+<view class='nodata' wx:if="{{!json.length}}">
+	<image src='/image/common/nodata.png'></image>
+	<text>暂无数据</text>
+</view>
+<!-- 列表加载 -->
+<view class="loading" wx:if="{{loading}}">
+	<image class='loading_img' src='/image/common/loading.png'></image>
+	<text>加载中...</text>
+</view>
+<view class="loading" wx:if="{{loadingTest && json.length}}">
+	<text>没有更多数据了</text>
+</view>

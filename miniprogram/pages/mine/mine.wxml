@@ -18,10 +18,10 @@
     </view>
 </block>
 <!-- tabs -->
-<view class="tabs">
+<navigator url="/pages/report/report/report" class="tabs">
     <image src="/image/mine/mine-report.png"></image>
     <text>提报管理</text>
-</view>
+</navigator>
 <view class="tabs">
     <image src="/image/mine/mine-outlogin.png"></image>
     <text>退出登录</text>

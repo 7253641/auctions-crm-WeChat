@@ -1,2 +1,44 @@
 <!--pages/report/reportclient/reportclient.wxml-->
-<text>pages/report/reportclient/reportclient.wxml</text>
+<view class="search">
+    <view class="search-input">
+        <image src="/image/common/search.png"></image>
+        <input type="text" placeholder="输入客户姓名或者手机号码" placeholder-class="input_"></input>
+    </view>
+    <text class="search-button">查询</text>
+</view>
+<view class="search-block"></view>
+<view class="list">
+    <view class="list-top">
+        <text>张老三 138****4523</text>
+        <text>河南-许昌</text>
+    </view>
+    <view class="list-bottom">
+        <text>到场状态：<text class="list-bottom_or">已到场</text></text>
+        <text>办牌状态：<text class="list-bottom_or">未办牌</text></text>
+    </view>
+</view>
+<view class="list">
+    <view class="list-top">
+        <text>张老三 138****4523</text>
+        <text>河南-许昌</text>
+    </view>
+    <view class="list-bottom">
+        <text>到场状态：<text class="list-bottom_or">已到场</text></text>
+        <text>办牌状态：<text class="list-bottom_or">未办牌</text></text>
+        <text class="list-bottom_or">2121</text>
+    </view>
+</view>
+<navigator url="/pages/report/reportclientprem/reportclientprem" class="report-client-btn">提报客户</navigator>
+<!-- 暂无数据 -->
+<view class='nodata' wx:if="{{!json.length}}">
+	<image src='/image/common/nodata.png'></image>
+	<text>暂无数据</text>
+</view>
+<!-- 列表加载 -->
+<view class="loading" wx:if="{{loading}}">
+	<image class='loading_img' src='/image/common/loading.png'></image>
+	<text>加载中...</text>
+</view>
+<view class="loading" wx:if="{{loadingTest && json.length}}">
+	<text>没有更多数据了</text>
+</view>

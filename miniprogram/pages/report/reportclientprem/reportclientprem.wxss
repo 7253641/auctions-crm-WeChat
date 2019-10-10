@@ -1,1 +1,90 @@
 /* pages/report/reportclientprem/reportclientprem.wxss */
+page{
+    background: #fff;
+}
+.form{
+    width: 670rpx;
+    margin-left: 40rpx;
+    margin-top: 16rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.form:first-of-type{
+    margin-top: 30rpx;
+}
+.form .form-left{
+    width: 118rpx;
+    height: 60rpx;
+    font-size: 30rpx;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .form-right{
+    width: 514rpx;
+    height: 60rpx;
+    border: 1rpx solid #ddd;
+    border-radius: 5rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24rpx;
+    color: #101010;
+}
+.form .form-right ._input{
+    font-size: 24rpx;
+    color: #999;
+}
+.form .textarea{
+    height: 234rpx;
+}
+.form .textarea textarea{
+    width: 514rpx;
+    height: 234rpx;
+    padding: 19rpx 31rpx;
+}
+.form .form-right input{
+    width: 400rpx;
+    height: 60rpx;
+    padding: 0 31rpx;
+    
+}
+.form .form-right image{
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 19rpx;
+}
+/* ps */
+.ps{
+    width: 670rpx;
+    margin-left: 40rpx;
+    margin-top: 16rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #999;
+}
+.ps text:first-of-type{
+    display: flex;
+    width: 118rpx;
+    justify-content: flex-end;
+}
+.ps text:last-of-type{
+    display: flex;
+    width: 514rpx;
+}
+/* btn */
+.btn{
+    position: fixed;
+    width: 750rpx;
+    height: 100rpx;
+    background: #F49D19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    font-size: 36rpx;
+    color: #fff;
+}
